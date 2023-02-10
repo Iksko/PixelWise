@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <script src="https://kit.fontawesome.com/4f92fa1c8d.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>PixelWise</title>
+    <!-- 1. Nav-bar animace, změnit barvu po is-active i na mobilu, tabletu, zkusit předělat animace na nav-link, ikony do nav menu, dát nav menu mobilu na celou obrazovku, udělat zde gradient, log-in tlačítko
+
+    2. H1 animace, přidat tlačítko na kontakt
+
+    3. About background, animace
+
+    4. Services background, animace, tlačítka místo ceny, ikony, předělat popis služby
+
+    5. Gallery background, animace, celkově předělat
+
+    6. Contact animace
+
+    7. Celkový background -->
+</head>
+<body>
+
+    <header id="header" class="header">
+        <a href="index.html"><img src="images/logo.png" alt="logo"></a>
+        <div class="hamburger" id="ham">
+            <div class="bar">
+
+            </div>
+        </div>
+        <div id="navbar">
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </header>
+    <div id="mobile-navbar">
+        <ul>
+            <li><a href=".about">About</a></li>
+            <li><a href=".services">Services</a></li>
+            <li><a href=".gallery">Gallery</a></li>
+            <li><a href=".contact">Contact</a></li>
+        </ul>
+    </div>
+    <main>
+        <img src="images/overlay.png" alt="gradient" id="overlay">
+        <div class="container">
+            <div id="main-img">
+                <h1>DESIGN THAT INSPIRES</h1>
+            </div>
+        </div>
+        <div class="about" id="about">
+            <div class="text">
+                <h2>What we do?</h2>
+                <p>Welcome to our design website, where we believe that good design is the foundation of a successful online presence. Our team of experienced designers is dedicated to delivering exceptional and innovative design solutions that will make your website stand out.</p>
+                <p>We understand that every website is unique, and that's why we take the time to get to know your business, brand, and vision. Our design process starts with a deep dive into your goals, target audience, and brand identity to ensure that the final product accurately reflects who you are and what you do. We believe that design should be both beautiful and functional, and we work hard to strike a balance between the two.</p>
+                <p>Whether you're looking for a clean and modern website for your business, a portfolio site to showcase your work, or a custom design solution for a unique project, we've got you covered. Our designers are skilled in a wide range of design styles and techniques, and they're always up for a challenge.
+                At our design website, we believe in a collaborative approach to design. We believe that your input is essential to the success of the project, and we welcome your feedback and suggestions throughout the design process. We want you to be involved and excited about your website every step of the way.
+                We are proud to offer affordable design services that deliver results. We understand that good design doesn't have to come with a hefty price tag, and we believe that everyone should have access to a website that looks great and functions seamlessly.</p>
+                <p>So, whether you're just starting out or you're ready to revamp your existing website, we're here to help. Let's work together to create a website that you'll be proud to call your own. Get in touch with us today to start your design journey.</p>
+            </div>
+        </div>
+        <div class="services" id="services">
+            <h2>What we offer?</h2>
+            <div class="contentBox">
+                <div class="content one">
+                    <div class="content-text">
+                            <h3>Brand Identity Design</h3>
+                        <ul>
+                            <li>Consistent visuals and messaging.</li>
+                            <li>Unique and memorable identity.</li>
+                            <li>Relevant to target audience.</li>
+                            <li>Flexible design system.</li>
+                            <li>Authentic representation.</li>
+                        </ul>
+                        <h4>250+ $</h4>
+                    </div>
+                </div>
+                <div class="content two">
+                    <div class="content-text">
+                        <h3>UX/UI Design</h3>
+                        <ul>
+                            <li>User-centered approach.</li>
+                            <li>Ease of use and accessibility.</li>
+                            <li>Aesthetic appeal and visual design.</li>
+                            <li>Functionality and interactivity.</li>
+                            <li>Consistency and simplicity.</li>
+                        </ul>
+                        <h4>500+ $</h4>
+                    </div>
+                </div>
+                <div class="content three">
+                    <div class="content-text">
+                        <h3>Graphic Design</h3>
+                        <ul>
+                            <li>Visual communication and storytelling..</li>
+                            <li>Aesthetic appeal and visual impact.</li>
+                            <li>Brand consistency and identity.</li>
+                            <li>Effective use of typography, color, and imagery.</li>
+                            <li>User experience and interaction design.</li>
+                        </ul>
+                        <h4>1.000+ $</h4>
+                    </div>
+                </div>
+            </div>
+
+            </div>
+        </div>
+        <div class="gallery" id="gallery">
+            <h2>Our gallery</h2>
+            <div class="images">
+                <img src="images/img1.png" alt="img">
+                <img src="images/img3.png" alt="img">
+                <img src="images/img2.png" alt="img">
+                <img src="images/img4.png" alt="img">
+                <span class="show-more">
+                    <img src="images/img5.png" alt="img">
+                    <img src="images/img6.png" alt="img">
+                </span>
+            </div>
+            <span id="show-more-btn"></span>
+        </div>
+        <div class="contact" id="contact">
+            <h2>Contact us</h2>
+            <form action="index.html" method="post">
+                <input type="text" name="fname" id="fname" placeholder="First name">
+                <input type="text" name="lname" id="lname" placeholder="Last name">
+                <input type="email" name="email" id="email" placeholder="E-mail">
+                <input type="tel" name="telnum" id="telnum" placeholder="Phone number">
+                <textarea name="note" id="note" rows="5" cols="10" placeholder="Your note"></textarea>
+                <input type="submit" name="submit" id="submit" value="Send">
+            </form>
+        </div>
+    </main>
+
+    <footer>
+        <a href="https://www.instagram.com/sykora__t/"><img src="images/igicon.png" alt=""></a>
+        <p>Vytvořeno s ❤️</p>
+        <p>&copy; 2023, Tomáš Sýkora</p>
+    </footer>
+    
+    <a href=".container" id="icon">
+        <span class="material-symbols-outlined">
+            expand_less
+        </span>
+    </a>
+
+    <script src="script.js"></script>
+</body>
+</html>
