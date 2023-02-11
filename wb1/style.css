@@ -7,6 +7,7 @@
 }
 :root{
     --gray: #232329;
+    --headerGray: #1e1e1e;
     --white: #fff;
     --black: #000;
     --magenta: rgb(217, 1, 231);
@@ -45,6 +46,7 @@ header{
 header.is-active{
     opacity: .95;
     height: 8.5vh;
+    background-color: var(--headerGray);
 }
 header img{
     width: 80px;
@@ -93,15 +95,14 @@ header #navbar ul{
     display: none;
 }
 #mobile-navbar{
-    z-index: 1;
     width: 100%;
-    height: 60vh;
+    height: 55vh;
     position: fixed;
     top: 9.5vh;
-    background-color: var(--gray);
+    background: linear-gradient(0deg, rgb(47, 47, 51) 0%, var(--gray) 100%);
     left: 100%;
     z-index: 5;
-    transition: .5s  ease-in-out;
+    transition: .5s  cubic-bezier(0.9, 0.02, 0.49, 0.95);
 }
 #mobile-navbar ul{
     display: flex;
@@ -128,6 +129,7 @@ header #navbar ul{
 #mobile-navbar.scroll{
     top: 8.35vh;
     opacity: .95;
+    background: linear-gradient(0deg, rgb(47, 47, 51) 0%, var(--headerGray) 100%);
 }
 /*NAV-LINK-SLIDE-EFFECT*/
 #mobile-navbar ul li a::before{
@@ -159,7 +161,7 @@ header #navbar ul{
 }
 @media screen and (min-width: 768px) and (max-width: 850px){
     #mobile-navbar{
-        background-color: #212126;
+        background: linear-gradient(0deg, rgb(47, 47, 51) 0%, rgba(33,33,38,1) 100%);
     }
     #mobile-navbar ul li a{
         font-size: 35px;
@@ -244,15 +246,6 @@ main .container #main-img{
     display: flex;
     align-items: center;
     justify-content: center;
-    animation: colorscale 1s linear;
-}
-@keyframes colorscale{
-    0%{
-        filter: grayscale(1);
-    }
-    100%{
-        filter: grayscale(0);
-    }
 }
 main #overlay{
     position: absolute;
