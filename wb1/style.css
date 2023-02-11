@@ -244,6 +244,15 @@ main .container #main-img{
     display: flex;
     align-items: center;
     justify-content: center;
+    animation: colorscale 1s linear;
+}
+@keyframes colorscale{
+    0%{
+        filter: grayscale(1);
+    }
+    100%{
+        filter: grayscale(0);
+    }
 }
 main #overlay{
     position: absolute;
