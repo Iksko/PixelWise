@@ -251,19 +251,71 @@ main #overlay{
     left: -100px;
     opacity: .5;
 }
-h1{
+.hero-h1{
     color: var(--white);
-    width: 80%;
     text-align: start;
     font-weight: bold;
+    width: 80%;
     font-size: 70px;
     position: relative;
-    top: -15%;
-    margin: 5% 10% 5% 0;
+    top: -10%;
+    left: 1%;
 }
-@media screen and (max-width: 380px){
+.hero1{
+    animation: hero1 1.5s cubic-bezier(0.33, 0.06, 0, 1);
+}
+.hero2{
+    animation: hero1 1.2s cubic-bezier(0.33, 0.06, 0, 1);
+}
+.hero3{
+    animation: hero1 0.9s cubic-bezier(0.33, 0.06, 0, 1);
+}
+@keyframes hero1{
+    0%{
+        transform: translateX(-100%);
+    }
+    100%{
+        transform: translateX(0);
+    }
+}
+@keyframes hero2{
+    0%{
+        transform: translateX(-100%);
+    }
+    100%{
+        transform: translateX(0);
+    }
+}
+@keyframes hero3{
+    0%{
+        transform: translateX(-100%);
+    }
+    100%{
+        transform: translateX(0);
+    }
+}
+@media screen and (max-width: 390px){
+    .hero-h1{
+        left: -5%;
+    }
     h1{
         font-size: 60px;
+    }
+}
+@media screen and (min-width: 391px) and (max-width: 600px){
+    .hero-h1{
+        left: -4%;
+    }
+    h1{
+        font-size: 70px;
+    }
+}
+@media screen and (min-width: 600px) and (max-width: 1250px){
+    .hero-h1{
+        left: -3%;
+    }
+    h1{
+        font-size: 95px;
     }
 }
 @media screen and (min-width: 1250px){
@@ -277,14 +329,6 @@ h1{
         justify-content: flex-start;
         background-size: 105%;
         background-repeat: no-repeat;
-    }
-}
-@media screen and (min-width: 1110px) and (max-width: 1250px){
-    h1{
-        width: 300px;
-        right: 25%;
-        font-size: 85px;
-        top: -10%;
     }
 }
 /*ABOUT*/
