@@ -90,6 +90,10 @@ header .hamburger.is-active::after{
 header .hamburger.is-active .bar{
     opacity: 0;
 }
+.headerIcon{
+    font-size: 20px;
+    margin-right: 10px;
+}
 /*NAV*/
 header #navbar ul{
     display: none;
@@ -165,6 +169,10 @@ header #navbar ul{
     }
     #mobile-navbar ul li a{
         font-size: 35px;
+    }
+    .headerIcon{
+        font-size: 30px;
+        margin-right: 15px;
     }
 }
 @media screen and (min-width: 500px) and (max-width: 768px){
