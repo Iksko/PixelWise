@@ -317,6 +317,7 @@ main #overlay{
     top: 100%;
     left: -100px;
     opacity: .5;
+    z-index: 1;
 }
 .hero-h1{
     color: var(--white);
@@ -337,16 +338,6 @@ main #overlay{
 .hero3{
     animation: hero1 1.1s cubic-bezier(0.33, 0.06, 0, 1);
 }
-/* .heroBtn{
-    text-decoration: none;
-    color: var(--white);
-    font-size: 50px;
-    padding: 15px 20px;
-    border-radius: 15px;
-    cursor: pointer;
-    border: solid var(--white) 5px;
-    background-image: linear-gradient(45deg, #ff3131, #8b2dff);
-} */
 @keyframes hero1{
     0%{
         transform: translateX(-100%);
@@ -404,40 +395,47 @@ main #overlay{
 }
 .text{
     width: 60%;
+    margin: 60px 30px;
     display: flex;
     flex-direction: column;
     text-align: center;
+    background-color: var(--gray);
+    border-radius: 30px;
     gap: 30px;
+    -webkit-box-shadow: 0px 0px 10px -3px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 10px -3px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 10px -3px rgba(0,0,0,0.75);
 }
 .about h2{
     letter-spacing: 1px;
     font-size: var(--h2);
-    margin-top: 100px;
+    margin-top: 40px;
+    padding: 0 10px;
 }
 .about p{
     font-size: var(--text-16);
+    padding: 0 25px 0 25px;
 }
 .about p:last-child{
-    padding-bottom: 20%;
+    padding-bottom: 40px;
 }
 @media screen and (max-width: 1100px){
     .about{
         width: 90%;
     }
     .text{
-        width: 80%;
+        width: 90%;
     }
     .about h2{
         font-size: var(--h2);
-        margin-top: 100px;
     }
     .about p{
         font-size: 15px;
     }
 }
 @media screen and (min-width: 768px) and (max-width: 850px){
-    .about h2{
-        margin-top: 150px;
+    .text{
+        margin-top: 100px;
     }
 }
 /*BACK-TO-TOP-ICON*/
