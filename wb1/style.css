@@ -395,7 +395,7 @@ main #overlay{
 }
 .text{
     width: 60%;
-    margin: 60px 30px;
+    margin: 90px 30px;
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -682,6 +682,7 @@ main #overlay{
 .show-more.is-active{
     display: flex;
     gap: 20px;
+    animation: slide-in-gallery 1s forwards;
 }
 /*SHOW-MORE-BUTTON*/
 #show-more-btn{
@@ -749,6 +750,26 @@ main #overlay{
         font-size: 30px;
     }
 }
+@keyframes slide-in-gallery{
+    0%{
+        transform: translateY(5%);
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+/* @keyframes slide-out-gallery{
+    0%{
+        transform: translateY(0);
+        opacity: 1;
+    }
+    100%{
+        transform: translateY(5%);
+        opacity: 0;
+    }
+} */
 /*CONTACT*/
 .contact{
     display: flex;
@@ -851,6 +872,50 @@ footer img:hover{
     footer p{
         font-size: 14px;
     }
+}
+/*ABOUT ANIMACE*/
+@keyframes slide-in-about{
+    0%{
+        transform: translateY(15%);
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+.text.is-active{
+    animation: slide-in-about 1.5s forwards;
+}
+/*SERVICES ANIMATION*/
+.services.is-active{
+    animation: slide-in-about 1.5s forwards;
+}
+/*CONTACT ANIMATION*/
+@keyframes slide-in-contact{
+    0%{
+        transform: translateY(10%);
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+.contact.is-active{
+    animation: slide-in-contact 1.5s forwards;
+}
+/*FOOTER ANIMATION*/
+@keyframes fade-in-footer{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+footer.is-active{
+    animation: fade-in-footer 1.5s forwards;
 }
 
     

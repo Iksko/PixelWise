@@ -111,5 +111,31 @@ showMoreBtn.addEventListener("click", () => {
   showMoreBtn.classList.toggle("is-active")
 })
 
+/*ABOUT ANIMATION*/
+const aboutAni = document.getElementById("text")
+const servicesAni = document.getElementById("services")
+const contactAni = document.getElementById("contact")
+const footerAni = document.querySelector("footer")
+
+window.addEventListener("scroll", () => {
+  /*ABOUT ANIMATION*/
+  if(window.pageYOffset>2){
+    aboutAni.classList.add("is-active")
+  }
+  /*SERVICES ANIMATION*/
+  if(window.pageYOffset>1000){
+    servicesAni.classList.add("is-active")
+  }
+  /*CONTACT ANIMATION*/
+  if(window.pageYOffset>3100){
+    contactAni.classList.add("is-active")
+  }
+  if(window.pageYOffset>3600){
+    footerAni.classList.add("is-active")
+  }
+})
+
+
+
 
 
